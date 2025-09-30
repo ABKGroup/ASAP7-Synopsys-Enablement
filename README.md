@@ -1192,7 +1192,7 @@ In the case of BSG’s AAT, there were outliers among the results of different S
 
 
 Our main interest here is QTS-TPS ↔ STRC-PT (i.e., FLOW1-1), so we provide an additional plot for Case 1 only.
-The plots below show the slack distributions of Flow1-1 for the four designs.
+The plots below show the slack of Flow1-1 for the four designs.
 
 <img width="856" height="489" alt="image" src="https://github.com/user-attachments/assets/e331dc65-1bc3-4685-8bd8-c8344c16adfe" />
 
