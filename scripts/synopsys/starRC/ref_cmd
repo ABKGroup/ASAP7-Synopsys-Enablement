@@ -19,7 +19,6 @@ LEF_FILE: ../../../ASAP7/lef/asap7_tech_1x_201209.lef
 LEF_FILE: ../../../ASAP7/lef/sram_asap7_116x128_1rw.lef
 LEF_FILE: ../../../ASAP7/lef/sram_asap7_32x128_1rw.lef
 LEF_FILE: ../../../ASAP7/lef/sram_asap7_62x64_1rw.lef
-LEF_FILE: ../../../ASAP7/lef/asap7_tech_4x_201209.lef
 LEF_FILE: ../../../ASAP7/lef/sram_asap7_124x64_1rw.lef
 LEF_FILE: ../../../ASAP7/lef/sram_asap7_32x256_1rw.lef
 LEF_FILE: ../../../ASAP7/lef/sram_asap7_64x256_1rw.lef
