@@ -51,8 +51,8 @@ Color		47 {
 }
 
 Tile		"unit" {
-		width				= 0.036
-		height				= 0.288
+		width				= 0.054
+		height				= 0.270
 }
 
 Layer		"nwell" {
