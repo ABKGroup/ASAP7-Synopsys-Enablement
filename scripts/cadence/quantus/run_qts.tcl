@@ -64,4 +64,7 @@ setExtractRCMode -engine postRoute -coupled ${CC}
 extractRC
 rcOut -spef ${DESIGN_DIR}/${DESIGN}_${PEX}_CC_${CC}.spef -cUnit fF
 
+save_cap_file ${CAP_EX_DIR}
+save_net_metal_via_features ${CAP_EX_DIR}
+
 exit

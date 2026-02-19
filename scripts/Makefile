@@ -6,10 +6,6 @@ ifndef PEX_TOOL
   $(error PEX_TOOL is not defined)
 endif
 
-ifndef STA_TOOL
-  $(error STA_TOOL is not defined)
-endif
-
 ifndef CC
   $(error CC is not defined)
 endif
@@ -19,6 +15,20 @@ ifndef SI
 endif
 
 NWORST ?= 1
+STA_TOOL ?=
+
+define infer_sta_tool
+$(shell arg=$$(echo "$1" | sed 's/^ *//; s/ *$$//'); \
+       if [ "$$arg" = "innovus" ] || [ "$$arg" = "quantus" ]; then echo "tempus"; \
+       else echo "primetime"; fi)
+endef
+
+ifeq ($(strip $(STA_TOOL)),)
+override STA_TOOL := $(call infer_sta_tool,$(PEX_TOOL))
+endif
+
+# Normalize STA tool token so inputs such as "PrimeTime" are accepted.
+override STA_TOOL := $(shell echo "$(STA_TOOL)" | sed 's/^ *//; s/ *$$//' | tr '[:upper:]' '[:lower:]')
 
 
 COMBO := $(PEX_TOOL)$(STA_TOOL)

@@ -1,0 +1,11 @@
+plotname=STRC_vs_QTS
+datatype=tcap
+golden=STRC
+target=QTS
+applied_scale_factor=1.000000
+recommended_scale_factor=1.026421
+datatype=res
+golden=STRC
+target=QTS
+applied_scale_factor=1.000000
+recommended_scale_factor=1.072390

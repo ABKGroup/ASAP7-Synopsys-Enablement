@@ -34,6 +34,7 @@ set_delay_cal_mode -siAware ${SI}
 report_timing
 
 save_cap_file ${CAP_EX_DIR}
+save_net_metal_via_features ${CAP_EX_DIR}
 save_timing_file ${TIMING_EX_DIR} ${NWORST}
 
 exit

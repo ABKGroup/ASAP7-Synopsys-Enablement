@@ -1,0 +1,7 @@
+reference
+benchmark/**/*.def
+benchmark/**/*.v
+benchmark/**/*.sdc
+benchmark/**/done/
+benchmark/**/*.spef
+benchmark/**/*.csv

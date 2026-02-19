@@ -1,0 +1,11 @@
+plotname=FC_vs_INVS
+datatype=tcap
+golden=FC
+target=INVS
+applied_scale_factor=1.000000
+recommended_scale_factor=0.994008
+datatype=res
+golden=FC
+target=INVS
+applied_scale_factor=1.000000
+recommended_scale_factor=0.958619

@@ -1,4 +1,6 @@
 import os
+import shutil
+import subprocess
 
 DESIGN = os.environ["DESIGN"]
 CC = os.environ["CC"]
@@ -40,7 +42,17 @@ for line in read_lines:
 with open("run_starRC", "w") as f:
     f.writelines(write_lines)
 
-os.system("StarXtract -clean run_starRC")
-os.system("rm run_starRC")
-os.system(f"rm {DESIGN}.star_sum")
-os.system(f"rm -r {RUN_DIR}")
+if shutil.which("StarXtract") is None:
+    raise RuntimeError("StarXtract not found in PATH. Load StarRC environment first.")
+
+subprocess.run(["StarXtract", "-clean", "run_starRC"], check=True)
+
+if not os.path.exists(SPEF_FILE):
+    raise RuntimeError(f"StarXtract completed but SPEF was not generated: {SPEF_FILE}")
+
+os.remove("run_starRC")
+star_sum = f"{DESIGN}.star_sum"
+if os.path.exists(star_sum):
+    os.remove(star_sum)
+if os.path.isdir(RUN_DIR):
+    shutil.rmtree(RUN_DIR)

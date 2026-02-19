@@ -79,6 +79,7 @@ rcOut -spef ${DESIGN_DIR}/${DESIGN}_${PEX}_CC_${CC}.spef -cUnit fF
 report_timing
 
 save_cap_file ${CAP_EX_DIR}
+save_net_metal_via_features ${CAP_EX_DIR}
 save_timing_file ${TIMING_EX_DIR} ${NWORST}
 
 exit
