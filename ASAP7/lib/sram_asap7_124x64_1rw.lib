@@ -9,16 +9,16 @@ library(sram_asap7_124x64_1rw) {
     current_unit : "1uA";
     leakage_power_unit : "1uW";
     nom_process : 1;
-    nom_temperature : 25.000;
-    nom_voltage : 0.7;
+    nom_temperature : 0.000;
+    nom_voltage : 0.77;
     capacitive_load_unit (1,pf);
 
     pulling_resistance_unit : "1kohm";
 
-    operating_conditions(tt_1.0_25.0) {
+    operating_conditions(PVT_0P77V_0C) {
         process : 1;
-        temperature : 25.000;
-        voltage : 0.7;
+        temperature : 0.000;
+        voltage : 0.77;
         tree_type : balanced_tree;
     }
 
@@ -30,7 +30,7 @@ library(sram_asap7_124x64_1rw) {
     default_input_pin_cap : 0.0;
     default_max_transition : 0.227;
 
-    default_operating_conditions : tt_1.0_25.0;
+    default_operating_conditions : PVT_0P77V_0C;
     default_leakage_power_density : 0.0;
 
     /* additional header data */

@@ -35,7 +35,7 @@ set DB_FILE " \
     asap7sc7p5t_SEQ_RVT_FF_nldm_201020.db \
     sram_asap7_256x128_1rw.db \
     sram_asap7_62x64_1rw.db \
-    asap7sc7p5t_SIMPLE_RVT_FF_nldm_201020.db \
+    asap7sc7p5t_SIMPLE_RVT_FF_nldm_250407.db \
     sram_asap7_32x128_1rw.db \
     sram_asap7_64x256_1rw.db \
     "
